@@ -24,14 +24,20 @@ export default function ContactPage() {
             
             <div className="space-y-12">
               <div>
-                <h3 className="text-sm font-medium text-zinc-900 mb-2">Corporate Headquarters & Manufacturing</h3>
+                <h3 className="text-sm font-medium text-zinc-900 mb-2">Headquarters & Manufacturing</h3>
                 <p className="text-zinc-500 font-light text-sm leading-relaxed mb-4">
                   Shed 46, Vishala Platinum Industrial Estate<br/>
                   Odhav – 382415<br/>
                   Gujarat, India
                 </p>
-                <div className="aspect-4/3 bg-zinc-200 rounded-xl overflow-hidden grayscale opacity-70 border border-zinc-100">
-                  <img src="/images/industrial_map.png" alt="Map Location" className="w-full h-full object-cover" />
+                <div className="aspect-[4/3] rounded-xl overflow-hidden border border-zinc-100">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.221194047647!2d72.67260697519973!3d23.015649279178607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87a6060da92b%3A0x9e045d38d157e199!2sVishala%20Platinum%20Industrial%20Estate!5e0!3m2!1sen!2sin!4v1776330545075!5m2!1sen!2sin"
+                    className="w-full h-full"
+                    loading="lazy"
+                    style={{ border: 0 }}
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                 </div>
               </div>
 
