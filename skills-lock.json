@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "skills": {
+    "font-pairing-suggester": {
+      "source": "onewave-ai/claude-skills",
+      "sourceType": "github",
+      "computedHash": "03b9ac9b499f962f9676bbd669584c262becb77193646c30c2c14c20ca5b353f"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "computedHash": "063a0e6448123cd359ad0044cc46b0e490cc7964d45ef4bb9fd842bd2ffbca67"
+    },
+    "stitch-design": {
+      "source": "google-labs-code/stitch-skills",
+      "sourceType": "github",
+      "computedHash": "6df709345652460b4d4fdf214476a20c75d76a2ae011a958a51de2c88e6d86d1"
+    }
+  }
+}
