@@ -30,7 +30,7 @@ export default function ContactPage() {
                   Odhav – 382415<br/>
                   Gujarat, India
                 </p>
-                <div className="aspect-[4/3] rounded-xl overflow-hidden border border-zinc-100">
+                <div className="aspect-4/3 rounded-xl overflow-hidden border border-zinc-100">
                   <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.221194047647!2d72.67260697519973!3d23.015649279178607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e87a6060da92b%3A0x9e045d38d157e199!2sVishala%20Platinum%20Industrial%20Estate!5e0!3m2!1sen!2sin!4v1776330545075!5m2!1sen!2sin"
                     className="w-full h-full"
