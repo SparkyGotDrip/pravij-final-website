@@ -87,7 +87,7 @@ export default function ProductsPage() {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
-              className="flex-1 w-full max-w-xl mx-auto aspect-[16/10] md:aspect-square rounded-3xl overflow-hidden border border-zinc-100 shadow-sm"
+              className="flex-1 w-full max-w-xl mx-auto aspect-16/10 md:aspect-square rounded-3xl overflow-hidden border border-zinc-100 shadow-sm"
             >
               <img
                 src="/images/products_hero.png"
@@ -105,7 +105,7 @@ export default function ProductsPage() {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
           
           {/* Sidebar Area */}
-          <aside className="w-full lg:w-1/4 flex-shrink-0 lg:sticky lg:top-28 space-y-10">
+          <aside className="w-full lg:w-1/4 shrink-0 lg:sticky lg:top-28 space-y-10">
             {/* Search filter */}
             <div className="relative">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-400" size={18} />
