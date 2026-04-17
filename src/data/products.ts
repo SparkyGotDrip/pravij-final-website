@@ -24,6 +24,416 @@ export interface ProductCategory {
 
 export const catalog: ProductCategory[] = [
   {
+    category: "Earthing Products",
+    description: "Complete range of earthing solutions including pit covers, electrodes, rods, and lightning arresters for optimal safety.",
+    items: [
+      {
+        id: "earthing-pit-cover",
+        name: "Earthing Pit Cover",
+        spec: "HDPE and Polymer covers for stable installation",
+        desc: "Ergonomic design for easy handling & storage. UV stabilized for outdoor durability.",
+        img: "/images/products_hero.png",
+        details: [
+          {
+            type: "list",
+            title: "Features",
+            items: [
+              "Ergonomic design for easy handling & storage",
+              "Secure and stable installation",
+              "Chemical-resistant construction",
+              "Heavy load-bearing capacity",
+              "UV stabilized for outdoor durability",
+              "Weatherproof and maintenance-free",
+            ],
+          },
+          {
+            type: "table",
+            title: "Product Dimensions",
+            headers: ["Model", "Dimensions (mm)", "Material", "Weight (kg)"],
+            rows: [
+              ["PV-MICRO-6\"", "155(D) x 230(H) x 240(B)", "HDPE", "0.4"],
+              ["PV-MINI-7\"", "177(D) x 230(H) x 270(B)", "HDPE", "0.7"],
+              ["PV-BIG-11\"", "260(D) x 265(H) x 340(B)", "HDPE", "1.2"],
+              ["PV-SQUARE", "300(D) x 300(H) x 270(B)", "HDPE", "2.2"],
+              ["PV-PEP-S", "245(D) x 245(H) x 195(B)", "Polymer", "2.4"],
+              ["PV-PEP", "308(D) x 308(H) x 215(B)", "Polymer", "2.5"],
+              ["PV-PEP-B 300", "500(D) x 500(H) x 315(B)", "Polymer", "5.0"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "rcc-chamber-cover",
+        name: "RCC Chamber/Cover",
+        spec: "Heavy-duty RCC chambers and covers",
+        desc: "Customizable and durable construction for pedestrian and heavy-duty installations with smooth internal surfaces.",
+        img: "/images/products_hero.png",
+        details: [
+          {
+            type: "list",
+            title: "Features",
+            items: [
+              "Customizable for heavy-duty",
+              "Durable construction for installation",
+              "Suitable for pedestrian",
+              "Smooth internal surface",
+            ],
+          },
+          {
+            type: "list",
+            title: "Chamber Sizes (mm)",
+            items: ["600x600x300", "450x450x450", "400x300x300", "300x300x300", "300x300x200"],
+          },
+          {
+            type: "list",
+            title: "Cover Sizes (mm)",
+            items: ["300x300", "450x450", "600x600"],
+          },
+        ],
+      },
+      {
+        id: "pure-copper-earth-electrode",
+        name: "Pure Copper Earth Electrode & Rod",
+        spec: "100% pure copper with 48/76mm diameter",
+        desc: "High-strength pure copper construction for efficient fault current dissipation.",
+        img: "/images/products_hero.png",
+        details: [
+          {
+            type: "list",
+            title: "Features",
+            items: [
+              "100% pure and high-strength copper construction",
+              "Efficient fault current dissipation",
+              "Quick, easy, and low-maintenance installation",
+              "Soil pH compatibility: 5.0 to 8.0",
+              "Available with integrated moisture booster packs",
+              "Sustainable and eco-safe design",
+            ],
+          },
+          {
+            type: "table",
+            title: "Sizes",
+            headers: ["Product", "Diameter", "Length"],
+            rows: [
+              ["PV-48/PCR", "48 MM", "1, 2, 3 MTR"],
+              ["PV-76/PCR", "76 MM", "1, 2, 3 MTR"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "copper-bonded-solid-earth-rod",
+        name: "Copper Bonded Solid Earth Rod",
+        spec: "Thick copper layer: 50-250 microns",
+        desc: "Standard-compliant copper coating with high tensile strength and anti-corrosive performance.",
+        img: "/images/products_hero.png",
+        details: [
+          {
+            type: "list",
+            title: "Features",
+            items: [
+              "Standard-compliant copper coating",
+              "Thick copper layer: 50-250 microns",
+              "High tensile strength and mechanical flexibility",
+              "Anti-corrosive performance",
+              "Long lifespan - 15+ years",
+              "Reliable and consistent grounding performance",
+            ],
+          },
+          {
+            type: "table",
+            title: "Sizes",
+            headers: ["Product Name", "Diameter", "Length", "Cu Bonding"],
+            rows: [
+              ["PV-14.2/CBR", "14.2 mm", "1, 2, 3 mtr", "50-250 micron"],
+              ["PV-17.2/CBR", "17.2 mm", "1, 2, 3 mtr", "50-250 micron"],
+              ["PV-20/CBR", "20 mm", "1, 2, 3 mtr", "50-250 micron"],
+              ["PV-25/CBR", "25 mm", "1, 2, 3 mtr", "50-250 micron"],
+              ["PV-32/CBR", "32 mm", "1, 2, 3 mtr", "50-250 micron"],
+              ["PV-38/CBR", "38 mm", "1, 2, 3 mtr", "50-250 micron"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "copper-plate-earthing",
+        name: "Copper Plate Earthing",
+        spec: "Various high-conductivity copper plates",
+        desc: "High conductivity copper plates for efficient fault current dissipation, ideal for high soil resistivity areas.",
+        img: "/images/products_hero.png",
+        details: [
+          {
+            type: "list",
+            title: "Features",
+            items: [
+              "High conductivity for efficient fault current dissipation",
+              "Long-lasting corrosion resistance",
+              "Ideal for high soil resistivity areas",
+              "Complies with IS standards for safe earthing",
+              "Maintenance-free operation",
+              "Suitable for all types of installations",
+              "Stable performance over time",
+              "Environmentally safe and reliable",
+            ],
+          },
+          {
+            type: "list",
+            title: "Plate Sizes (mm)",
+            items: ["150x150x3", "300x300x3", "450x450x3", "600x600x3"],
+          },
+        ],
+      },
+      {
+        id: "gi-earth-electrode",
+        name: "GI-Earth Electrode",
+        spec: "48/76mm diameter GI Electrodes",
+        desc: "Superior corrosion protection with low earth resistance using moisture booster bags.",
+        img: "/images/products_hero.png",
+        details: [
+          {
+            type: "list",
+            title: "Features",
+            items: [
+              "Superior corrosion protection",
+              "Low earth resistance with moisture booster bags",
+              "Rapid fault current dissipation",
+              "Quick, hassle-free installation with wide soil compatibility",
+              "Minimal maintenance requirements",
+            ],
+          },
+          {
+            type: "table",
+            title: "Sizes",
+            headers: ["Product", "Diameter", "Length"],
+            rows: [
+              ["PV-48/GIR", "48 MM", "1, 2, 3 MTR"],
+              ["PV-76/GIR", "76 MM", "1, 2, 3 MTR"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "copper-bonded-chemical-earth-electrode",
+        name: "Copper Bonded Chemical Earth Electrode",
+        spec: "Copper-coated flat electrode with chemical filling",
+        desc: "High-quality copper-bonded electrode filled with crystalline conductive compound.",
+        img: "/images/products_hero.png",
+        details: [
+          {
+            type: "list",
+            title: "Features",
+            items: [
+              "High-quality copper-coated electrode",
+              "Durable copper bonding",
+              "Copper-coated inner flat electrode",
+              "Crystalline conductive compound filling",
+              "Corrosion-resistant",
+              "Extended service life",
+              "Environmentally safe and sustainable design",
+              "Maintenance free operation",
+            ],
+          },
+          {
+            type: "table",
+            title: "Sizes",
+            headers: ["Product", "Diameter", "Length", "Copper Bonding"],
+            rows: [
+              ["PV-48/CBR", "48 MM", "1, 2, 3 mtr", "50-250 micron"],
+              ["PV-76/CBR", "76 MM", "1, 2, 3 mtr", "50-250 micron"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "pv-backfill-compound",
+        name: "PV Backfill Compound",
+        spec: "Graphite-enriched advanced formula",
+        desc: "Permanent moisture retention and ultra-low resistivity backfill compound.",
+        img: "/images/products_hero.png",
+        details: [
+          {
+            type: "list",
+            title: "Features",
+            items: [
+              "Permanent moisture retention",
+              "Ultra-low resistivity",
+              "Self-sustaining conductivity",
+              "Graphite-enriched advanced formula",
+              "Environmentally safe",
+              "Ideal for all soil types",
+              "Certified quality",
+            ],
+          },
+          {
+            type: "list",
+            title: "Available in",
+            items: ["25 KG", "15 KG", "10 KG"],
+          },
+        ],
+      },
+      {
+        id: "pv-gi-strips",
+        name: "PV All Types of G.I. Strips",
+        spec: "Zinc-coated for corrosion protection",
+        desc: "Reliable and efficient grounding strips versatile for applications across various industries.",
+        img: "/images/products_hero.png",
+        details: [
+          {
+            type: "list",
+            title: "Features",
+            items: [
+              "Zinc-coated for long-term corrosion protection",
+              "Reliable and efficient grounding performance",
+              "Versatile applications across various industries",
+              "Cost-effective and easy to maintain",
+              "Custom lengths and bundling options available",
+            ],
+          },
+          {
+            type: "list",
+            title: "Sizes",
+            items: ["25x3mm", "25x6mm", "50x5mm", "50x6mm", "75x5mm", "100x6mm", "100x12mm"],
+          },
+        ],
+      },
+      {
+        id: "pv-copper-earthing-strip",
+        name: "PV Copper Earthing Strip",
+        spec: "Superior electrical conductivity",
+        desc: "Ideal for high-voltage (HV) earthing systems, providing exceptional corrosion resistance.",
+        img: "/images/products_hero.png",
+        details: [
+          {
+            type: "list",
+            title: "Features",
+            items: [
+              "Superior electrical conductivity for efficient grounding",
+              "Ideal for high-voltage (HV) earthing systems",
+              "Exceptional corrosion resistance for long-term durability",
+              "Wide range of sizes available",
+              "Long life with minimal maintenance",
+              "Flexible and easy to install",
+              "Trusted in critical infrastructure and heavy-duty applications",
+            ],
+          },
+        ],
+      },
+      {
+        id: "copper-spike-lightning-arrester",
+        name: "Copper / Copper Bonded Spike Lightning Arrester",
+        spec: "Pure copper, Bonded copper, Hollow copper",
+        desc: "Crafted from high-purity copper to protect elevated structures from lightning damage.",
+        img: "/images/products_hero.png",
+        details: [
+          {
+            type: "parameters",
+            data: [
+              { label: "Standard", value: "IES - 62305" },
+              { label: "Material", value: "Pure copper, Bonded copper, Hollow copper" },
+              { label: "Technology", value: "Conventional type" },
+            ],
+          },
+          {
+            type: "list",
+            title: "Sizes",
+            items: [
+              "14MM Solid Rod 1/2 meter",
+              "16MM Solid Rod 1/2 meter",
+              "14MM Hollow Pipe 1/2 meter",
+            ],
+          },
+        ],
+      },
+      {
+        id: "ese-lightning-arrester",
+        name: "ESE Lightning Arrester",
+        spec: "Electro atmospheric terminal",
+        desc: "Engineered system to detect and intercept lightning strikes within its protection radius, conducting up to 200KA.",
+        img: "/images/products_hero.png",
+        details: [
+          {
+            type: "table",
+            title: "Technical Characteristics",
+            headers: ["Parameter", "Value"],
+            rows: [
+              ["Material", "Stainless Steel"],
+              ["Weight", "4.20 kg"],
+              ["External Diameter", "187 mm"],
+              ["Rod Length", "63 cm"],
+              ["Box Length", "67 cm"],
+              ["Rod Diameter", "65 mm (Male)"],
+              ["IP Code", "Ip67"],
+              ["Working Temperature", "-25°C to +90°C"],
+              ["Type of Terminal", "Electro atmospheric"],
+              ["Internal Insulation", "High Density Polyurethane Resin"],
+              ["Standard", "NFC 17-102/2011"],
+              ["Grounding Method", "Wire / Tape"],
+              ["Max Discharge Energy", "2.2 MJ / Ohm (10/350 us)"],
+              ["Advance Time", "60.0 µs"],
+            ],
+          },
+          {
+            type: "table",
+            title: "Protection Level - Radius in Meters",
+            headers: ["Height (m)", "Level 1", "Level 2", "Level 3", "Level 4"],
+            rows: [
+              ["2", "31", "35", "39", "43"],
+              ["3", "47", "52", "58", "64"],
+              ["5", "79", "86", "97", "107"],
+              ["10", "79", "88", "99", "109"],
+              ["20", "80", "89", "102", "113"],
+            ],
+          },
+        ],
+      },
+      {
+        id: "digital-lightning-strike-counter",
+        name: "Digital Lightning Strike Counter",
+        spec: "0-999999 strikes tracking",
+        desc: "Accurately logs and tracks lightning strikes, engineered with robust components for continuous monitoring.",
+        img: "/images/products_hero.png",
+        details: [
+          {
+            type: "list",
+            title: "Key Features",
+            items: [
+              "Complies with all relevant lightning protection standards",
+              "Backed by a 5-year warranty",
+              "8-digit digital display (up to 999999 strikes)",
+              "Easy to test using standard testing equipment",
+              "Made with premium UV-resistant plastic and stainless steel",
+              "Fully waterproof (IP67 rated) for outdoor use",
+            ],
+          },
+          {
+            type: "table",
+            title: "Technical Characteristics",
+            headers: ["Parameter", "Value"],
+            rows: [
+              ["Current Sensitivity", "500 A (8/20 µs impulse)"],
+              ["Operating Range", "Up to 1500 A, Max. 200 kA (8/20 µs)"],
+              ["Display", "Digital, 6 or 8 digits"],
+              ["Count Range", "0-999999 strikes"],
+              ["Operating Temp.", "< 95%"],
+              ["Working Humidity", "< 95%"],
+              ["Water Resistance", "Ip67"],
+              ["Weight", "0.67 kg"],
+              ["Dimensions (mm)", "100(D) x 68(H) x 70(W)"],
+              ["Type", "Waterproof Lightning Strike Counter"],
+            ],
+          },
+          {
+            type: "list",
+            title: "ESE Installation Accessories",
+            items: [
+              "Insulator", "Stray Wire", "U Anchor Bolt", "Anchor Bolt", "U Clamp", "GI Mast"
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
     category: "Electrical Items",
     description:
       "Connectors, distribution boxes, isolation switches, and complete earthing protection for solar systems.",

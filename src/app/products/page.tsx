@@ -140,7 +140,7 @@ export default function ProductsPage() {
                     </p>
                   </div>
 
-                  <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
+                  <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12 cursor-pointer">
                     {cat.items.map((item, i) => (
                       <Link
                         key={i}
@@ -172,7 +172,7 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      {/* 🔥 PDF MODAL */}
+      {/* PDF MODAL */}
       <AnimatePresence>
         {activePdf && (
           <motion.div
