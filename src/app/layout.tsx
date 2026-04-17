@@ -3,6 +3,7 @@ import "./globals.css";
 import LenisProvider from "@/components/lenis";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import FloatingWhatsApp from "@/components/FloatingWhatsApp";
 
 export const metadata: Metadata = {
   title: "Pravij Earthing Technologies | Solar Accessories Manufacturer",
@@ -24,6 +25,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <FloatingWhatsApp />
         </LenisProvider>
       </body>
     </html>

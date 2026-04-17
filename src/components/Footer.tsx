@@ -72,13 +72,14 @@ export default function Footer() {
               
               {/* Address */}
               <a
-                href="https://maps.app.goo.gl/kr3tKgT5eYAtPAn8A"
+                href="https://maps.app.goo.gl/AQTzXZuFDRhTvevw8"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-zinc-900 transition-colors"
               >
-                Shed 46, Vishala Platinum Industrial Estate<br/>
-                Odhav – 382415
+                510, Satva Icon, Vastral Cross Road<br/>
+                Ahmedabad – 382418<br/>
+                Gujarat, India
               </a>
 
               {/* Phone */}
