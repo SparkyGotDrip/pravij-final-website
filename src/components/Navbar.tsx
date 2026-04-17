@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
-import { Menu, X, Hexagon } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
 const navLinks = [
   { label: "About", href: "/about" },
@@ -28,19 +28,21 @@ export default function Navbar() {
 
   return (
     <nav
+      style={{ WebkitBackfaceVisibility: "hidden" }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? "bg-white shadow-sm border-b border-zinc-200 py-4"
-          : "bg-transparent py-6"
+          ? "bg-white/90 backdrop-blur-md py-4 shadow-[0_1px_0_rgba(0,0,0,0.06)]"
+          : "bg-transparent py-6 text-white"
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-        {/* Minimal Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
+        
+        {/* Logo */}
+        <Link href="/" className="flex items-center">
           <img
             src="/logo.png"
             alt="Pravij Logo"
-            className="h-14 md:h-16 w-auto object-contain"
+            className="h-16 md:h-20 w-auto object-contain"
           />
         </Link>
 
@@ -48,14 +50,19 @@ export default function Navbar() {
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((item) => {
             const isActive = pathname === item.href;
+
             return (
               <Link
                 key={item.href}
                 href={item.href}
                 className={`text-base tracking-wide transition-colors ${
                   isActive
-                    ? "text-zinc-900 font-medium"
-                    : "text-zinc-500 hover:text-zinc-900 font-light"
+                    ? isScrolled
+                      ? "text-zinc-900 font-medium"
+                      : "text-white font-medium"
+                    : isScrolled
+                    ? "text-zinc-500 hover:text-zinc-900 font-light"
+                    : "text-white/70 hover:text-white font-light"
                 }`}
               >
                 {item.label}
@@ -65,10 +72,14 @@ export default function Navbar() {
         </div>
 
         {/* CTA */}
-        <div className="hidden md:flex items-center">
+        <div className="hidden md:flex">
           <Link
             href="/contact"
-            className="text-base font-medium bg-black text-white px-6 py-2.5 rounded-full hover:bg-black/90 transition-all shadow-sm shadow-green-600/20"
+            className={`text-sm font-medium px-6 py-2.5 rounded-full transition ${
+              isScrolled
+                ? "bg-black text-white hover:bg-black/90"
+                : "bg-white text-black hover:bg-white/90"
+            }`}
           >
             Contact Us
           </Link>
@@ -76,14 +87,12 @@ export default function Navbar() {
 
         {/* Mobile Toggle */}
         <button
-          className="md:hidden text-zinc-500 hover:text-zinc-900 transition-colors"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+          className={`md:hidden transition-colors ${
+            isScrolled ? "text-zinc-600" : "text-white"
+          }`}
         >
-          {isMobileMenuOpen ? (
-            <X size={24} strokeWidth={1.5} />
-          ) : (
-            <Menu size={24} strokeWidth={1.5} />
-          )}
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
@@ -94,26 +103,20 @@ export default function Navbar() {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-zinc-100 overflow-hidden"
+            className="md:hidden bg-white shadow-[0_1px_0_rgba(0,0,0,0.06)]"
           >
             <div className="px-6 py-6 flex flex-col gap-4">
               {navLinks.map((item) => (
-                <Link
-                  key={item.href}
-                  href={item.href}
-                  className="text-lg font-light text-zinc-600 hover:text-zinc-900"
-                >
+                <Link key={item.href} href={item.href} className="text-zinc-700">
                   {item.label}
                 </Link>
               ))}
-              <div className="pt-4 mt-2 border-t border-zinc-100">
-                <Link
-                  href="/contact"
-                  className="inline-block text-sm font-medium bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-full shadow-sm shadow-green-600/20"
-                >
-                  Contact Us
-                </Link>
-              </div>
+              <Link
+                href="/contact"
+                className="mt-4 bg-green-600 text-white px-6 py-3 rounded-full text-center"
+              >
+                Contact Us
+              </Link>
             </div>
           </motion.div>
         )}

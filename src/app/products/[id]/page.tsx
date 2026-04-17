@@ -116,7 +116,7 @@ export default async function ProductDetailsPage({
                                 {row.map((cell, j) => (
                                   <td
                                     key={j}
-                                    className="py-4 px-4 text-sm text-zinc-600 max-w-[250px] whitespace-pre-wrap break-words"
+                                    className="py-4 px-4 text-sm text-zinc-600 max-w-[250px] whitespace-pre-wrap wrap-break-word"
                                   >
                                     {cell}
                                   </td>

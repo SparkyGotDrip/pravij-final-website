@@ -12,54 +12,76 @@ import {
 
 function HeroSection() {
   return (
-    <section className="relative pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden bg-zinc-50 flex flex-col items-center justify-center text-center">
-      <div className="max-w-4xl mx-auto px-6 relative z-10">
+    <section className="relative pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden flex flex-col items-center justify-center text-center">
+
+      {/* 🎥 Background Video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover"
+      >
+        {/* ✅ FIXED PATH */}
+        <source src="/video/hero.mp4" type="video/mp4" />
+      </video>
+
+      {/* 🌑 Dark Overlay */}
+      <div className="absolute inset-0 bg-black/60" />
+
+      {/* Content */}
+      <div className="max-w-4xl mx-auto px-6 relative z-10 text-white">
+        
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-zinc-200 bg-white text-xs font-medium text-zinc-600 mb-8 tracking-wide shadow-sm"
+          transition={{ duration: 0.7 }}
+          className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/20 bg-white/10 text-xs font-medium text-white mb-8 tracking-wide backdrop-blur"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-green-500 animate-pulse" />
+          <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
           Precision Manufacturing in India
         </motion.div>
 
+        {/* ✅ TITLE FIXED */}
         <motion.h1
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.1, ease: "easeOut" }}
-          className="text-4xl md:text-6xl lg:text-7xl font-medium text-zinc-900 tracking-tight leading-[1.1] mb-6"
+          transition={{ duration: 0.7, delay: 0.1 }}
+          className="text-4xl md:text-6xl lg:text-7xl font-medium text-white tracking-tight leading-[1.1] mb-6"
         >
           Advanced safety systems for next-generation{" "}
-          <span className="text-zinc-400 font-light">energy.</span>
+          {/* ✅ GREEN HIGHLIGHT */}
+          <span className="text-green-500 font-light">energy.</span>
         </motion.h1>
 
+        {/* ✅ PARAGRAPH FIXED */}
         <motion.p
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
-          className="text-lg md:text-xl text-zinc-500 font-light max-w-2xl mx-auto mb-10 leading-relaxed"
+          transition={{ duration: 0.7, delay: 0.2 }}
+          className="text-lg md:text-xl text-white/80 font-light max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          Manufacturing & supplying solar accessories for safe, efficient, and reliable solar systems. Providing complete electrical and earthing protection.
+          Manufacturing & supplying solar accessories for safe, efficient, and reliable solar systems.
         </motion.p>
 
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7, delay: 0.3, ease: "easeOut" }}
+          transition={{ duration: 0.7, delay: 0.3 }}
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <Link
             href="/products"
-            className="w-full sm:w-auto px-7 py-3 rounded-full bg-black text-white font-medium text-sm hover:bg-black/90 transition-all flex items-center justify-center gap-2 shadow-sm shadow-green-600/30"
+            className="w-full sm:w-auto px-7 py-3 rounded-full bg-green-600 text-white font-medium text-sm hover:bg-green-700 transition-all shadow-lg"
           >
             View products
           </Link>
+
           <Link
             href="/contact"
-            className="w-full sm:w-auto px-7 py-3 rounded-full bg-white border border-zinc-200 text-zinc-900 font-medium text-sm hover:bg-zinc-50 transition-all flex items-center justify-center gap-2 shadow-sm group"
+            className="w-full sm:w-auto px-7 py-3 rounded-full bg-white/10 border border-white/20 text-white font-medium text-sm hover:bg-white/20 transition-all flex items-center justify-center gap-2 backdrop-blur group"
           >
-            Speak to engineering{" "}
+            Speak to engineering
             <ArrowRight
               size={16}
               strokeWidth={1.5}
