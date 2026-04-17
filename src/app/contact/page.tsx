@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'motion/react';
+import { Phone } from 'lucide-react';
 
 export default function ContactPage() {
   return (
@@ -41,12 +42,27 @@ export default function ContactPage() {
                 </div>
               </div>
 
+              {/* 🔥 Updated Contact Section */}
               <div>
                 <h3 className="text-sm font-medium text-zinc-900 mb-2">Direct Contact</h3>
                 <div className="flex flex-col gap-2">
-                  <span className="text-zinc-500 font-light text-sm">+91 98984 04514</span>
-                  <span className="text-zinc-500 font-light text-sm">+91 98984 04574</span>
-                  <a href="http://www.pravijearthing.com" target="_blank" rel="noopener noreferrer" className="text-zinc-500 hover:text-emerald-600 font-light text-sm transition-colors mt-2 block">www.pravijearthing.com</a>
+                  
+                  <a
+                    href="tel:+919898404514"
+                    className="flex items-center gap-2 text-zinc-500 font-light text-sm hover:text-zinc-900 transition-colors group"
+                  >
+                    <Phone size={14} className="text-green-600 group-hover:scale-110 transition-transform" />
+                    +91 98984 04514
+                  </a>
+
+                  <a
+                    href="tel:+919898404574"
+                    className="flex items-center gap-2 text-zinc-500 font-light text-sm hover:text-zinc-900 transition-colors group"
+                  >
+                    <Phone size={14} className="text-green-600 group-hover:scale-110 transition-transform" />
+                    +91 98984 04574
+                  </a>
+
                 </div>
               </div>
             </div>
