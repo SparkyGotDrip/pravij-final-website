@@ -13,6 +13,24 @@ export default function ProductsPage() {
 
   const categories = catalog.map((c) => c.category);
 
+  // Parse URL query parameter on init
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const params = new URLSearchParams(window.location.search);
+      const catParam = params.get("category");
+      if (catParam) {
+        // Also handling possible encoding if needed, though URLSearchParams handles standard stuff
+        const decodedCat = decodeURIComponent(catParam);
+        if (categories.includes(decodedCat)) {
+           setActiveCategory(decodedCat);
+        } else if (categories.includes(catParam)) {
+           setActiveCategory(catParam);
+        }
+      }
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   // Find active category object
   const activeCatObj = catalog.find((c) => c.category === activeCategory) || catalog[0];
 

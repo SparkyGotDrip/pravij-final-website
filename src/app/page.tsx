@@ -149,22 +149,28 @@ function HighlightSection() {
 function MinimalProductPreview() {
   const categories = [
     {
+      name: "Earthing Products",
+      items: "Pit Covers, Electrodes, Rods, Arresters",
+      link: "/products?category=Earthing+Products",
+      img: "/images/earthing_rods.png",
+    },
+    {
       name: "Electrical Items",
       items: "MC4 Connectors, ACDB / DCDB, Earthing Kits",
-      link: "/products",
+      link: "/products?category=Electrical+Items",
       img: "/images/solar_connectors.png",
     },
     {
       name: "Structure Items",
       items: "Bolts, Base Plates, Rails, Fasteners",
-      link: "/products",
+      link: "/products?category=Structure+Items",
       img: "/images/solar_mounts.png",
     },
     {
       name: "Cleaning Items",
       items: "Pressure Pumps, Sprinklers, Brushes",
-      link: "/products",
-      img: "/images/earthing_rods.png",
+      link: "/products?category=Cleaning+Items",
+      img: "/images/products_hero.png",
     },
   ];
 
@@ -194,7 +200,7 @@ function MinimalProductPreview() {
           </Link>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((cat, idx) => (
             <motion.div
               key={idx}
@@ -202,19 +208,20 @@ function MinimalProductPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="group cursor-pointer"
             >
-              <div className="relative aspect-4/3 rounded-2xl overflow-hidden bg-zinc-200 mb-6">
-                <img
-                  src={cat.img}
-                  alt={cat.name}
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 saturate-50 mix-blend-multiply"
-                />
-              </div>
-              <h3 className="text-xl font-medium text-zinc-900 mb-1">
-                {cat.name}
-              </h3>
-              <p className="text-zinc-500 font-light text-sm">{cat.items}</p>
+              <Link href={cat.link} className="group cursor-pointer block">
+                <div className="relative aspect-4/3 rounded-2xl overflow-hidden bg-zinc-200 mb-6">
+                  <img
+                    src={cat.img}
+                    alt={cat.name}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-90 saturate-50 mix-blend-multiply"
+                  />
+                </div>
+                <h3 className="text-xl font-medium text-zinc-900 mb-1">
+                  {cat.name}
+                </h3>
+                <p className="text-zinc-500 font-light text-sm">{cat.items}</p>
+              </Link>
             </motion.div>
           ))}
         </div>
