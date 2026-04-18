@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import { Menu, X } from "lucide-react";
@@ -39,14 +40,17 @@ export default function Navbar() {
           : "bg-white py-4 shadow-[0_1px_0_rgba(0,0,0,0.06)]"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto pl-4 pr-6 md:pl-6 md:pr-8 flex items-center justify-between">
         
-        {/* Logo */}
-        <Link href="/" className="flex items-center">
-          <img
+        {/* Logo (Fixed Size + Alignment) */}
+        <Link href="/" className="flex items-center -ml-1 md:-ml-3 lg:-ml-4">
+          <Image
             src="/logo.png"
             alt="Pravij Logo"
-            className="h-16 md:h-20 w-auto object-contain"
+            width={120}
+            height={40}
+            priority
+            className="h-11 md:h-12 lg:h-14 w-auto object-contain"
           />
         </Link>
 
