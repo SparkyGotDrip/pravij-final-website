@@ -47,8 +47,8 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="Pravij Logo"
-            width={120}
-            height={40}
+            width={160}
+            height={60}
             priority
             className="h-11 md:h-12 lg:h-14 w-auto object-contain"
           />
