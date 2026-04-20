@@ -32,7 +32,7 @@ export const catalog: ProductCategory[] = [
         name: "Earthing Pit Cover",
         spec: "HDPE and Polymer covers for stable installation",
         desc: "Ergonomic design for easy handling & storage. UV stabilized for outdoor durability.",
-        img: "/images/products_hero.png",
+        img: "/images/earthing-products/Earthing Pit Cover.png",
         details: [
           {
             type: "list",
@@ -67,7 +67,7 @@ export const catalog: ProductCategory[] = [
         name: "RCC Chamber/Cover",
         spec: "Heavy-duty RCC chambers and covers",
         desc: "Customizable and durable construction for pedestrian and heavy-duty installations with smooth internal surfaces.",
-        img: "/images/products_hero.png",
+        img: "/images/earthing-products/RCC Chamber Cover.png",
         details: [
           {
             type: "list",
@@ -96,7 +96,7 @@ export const catalog: ProductCategory[] = [
         name: "Pure Copper Earth Electrode & Rod",
         spec: "100% pure copper with 48/76mm diameter",
         desc: "High-strength pure copper construction for efficient fault current dissipation.",
-        img: "/images/products_hero.png",
+        img: "/images/earthing-products/Pure Copper Earth Electrode & Rod.png",
         details: [
           {
             type: "list",
@@ -126,7 +126,7 @@ export const catalog: ProductCategory[] = [
         name: "Copper Bonded Solid Earth Rod",
         spec: "Thick copper layer: 50-250 microns",
         desc: "Standard-compliant copper coating with high tensile strength and anti-corrosive performance.",
-        img: "/images/products_hero.png",
+        img: "/images/earthing-products/Copper Bonded Solid Earth Rod.png",
         details: [
           {
             type: "list",
@@ -160,7 +160,7 @@ export const catalog: ProductCategory[] = [
         name: "Copper Plate Earthing",
         spec: "Various high-conductivity copper plates",
         desc: "High conductivity copper plates for efficient fault current dissipation, ideal for high soil resistivity areas.",
-        img: "/images/products_hero.png",
+        img: "/images/earthing-products/Copper Plate Earthing.png",
         details: [
           {
             type: "list",
@@ -188,7 +188,7 @@ export const catalog: ProductCategory[] = [
         name: "GI-Earth Electrode",
         spec: "48/76mm diameter GI Electrodes",
         desc: "Superior corrosion protection with low earth resistance using moisture booster bags.",
-        img: "/images/products_hero.png",
+        img: "/images/earthing-products/GI-Earth Electrode.png",
         details: [
           {
             type: "list",
@@ -217,7 +217,7 @@ export const catalog: ProductCategory[] = [
         name: "Copper Bonded Chemical Earth Electrode",
         spec: "Copper-coated flat electrode with chemical filling",
         desc: "High-quality copper-bonded electrode filled with crystalline conductive compound.",
-        img: "/images/products_hero.png",
+        img: "/images/earthing-products/Copper Bonded Chemical Earth Electrode.png",
         details: [
           {
             type: "list",
@@ -249,7 +249,7 @@ export const catalog: ProductCategory[] = [
         name: "PV Backfill Compound",
         spec: "Graphite-enriched advanced formula",
         desc: "Permanent moisture retention and ultra-low resistivity backfill compound.",
-        img: "/images/products_hero.png",
+        img: "/images/earthing-products/PV Backfill Compound.png",
         details: [
           {
             type: "list",
@@ -276,7 +276,7 @@ export const catalog: ProductCategory[] = [
         name: "PV All Types of G.I. Strips",
         spec: "Zinc-coated for corrosion protection",
         desc: "Reliable and efficient grounding strips versatile for applications across various industries.",
-        img: "/images/products_hero.png",
+        img: "/images/earthing-products/PV All Types of G.I. Strips.png",
         details: [
           {
             type: "list",
@@ -301,7 +301,7 @@ export const catalog: ProductCategory[] = [
         name: "PV Copper Earthing Strip",
         spec: "Superior electrical conductivity",
         desc: "Ideal for high-voltage (HV) earthing systems, providing exceptional corrosion resistance.",
-        img: "/images/products_hero.png",
+        img: "/images/earthing-products/PV Copper Earthing Strip.png",
         details: [
           {
             type: "list",
@@ -323,7 +323,7 @@ export const catalog: ProductCategory[] = [
         name: "Copper / Copper Bonded Spike Lightning Arrester",
         spec: "Pure copper, Bonded copper, Hollow copper",
         desc: "Crafted from high-purity copper to protect elevated structures from lightning damage.",
-        img: "/images/products_hero.png",
+        img: "/images/earthing-products/Copper Bonded Spike Lightning Arrester.png",
         details: [
           {
             type: "parameters",
@@ -349,7 +349,7 @@ export const catalog: ProductCategory[] = [
         name: "ESE Lightning Arrester",
         spec: "Electro atmospheric terminal",
         desc: "Engineered system to detect and intercept lightning strikes within its protection radius, conducting up to 200KA.",
-        img: "/images/products_hero.png",
+        img: "/images/earthing-products/ESE Lightning Arrester.png",
         details: [
           {
             type: "table",
@@ -391,7 +391,7 @@ export const catalog: ProductCategory[] = [
         name: "Digital Lightning Strike Counter",
         spec: "0-999999 strikes tracking",
         desc: "Accurately logs and tracks lightning strikes, engineered with robust components for continuous monitoring.",
-        img: "/images/products_hero.png",
+        img: "/images/earthing-products/Digital Lightning Strike Counter.png",
         details: [
           {
             type: "list",
@@ -789,8 +789,8 @@ export const catalog: ProductCategory[] = [
         ],
       },
       {
-        id: "cable-tie-aluminium",
-        name: "Cable Tie — Aluminium / Hardened",
+        id: "cable-tie",
+        name: "Cable Tie",
         spec: "Multiple tie specifications available",
         desc: "Rugged cable ties for routing high-tension cables.",
         img: "/images/products_hero.png",
