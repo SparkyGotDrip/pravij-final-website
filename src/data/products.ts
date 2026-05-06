@@ -12,7 +12,7 @@ export interface Product {
   name: string;
   spec: string;
   desc: string;
-  img: string;
+  img: string | string[];
   details?: ProductDetail[];
 }
 
@@ -443,7 +443,7 @@ export const catalog: ProductCategory[] = [
         name: "Solar MC4 Connector (LQ-1)",
         spec: "30A, 1500V DC (IEC) / 1000V DC (UL)",
         desc: "High-performance MC4 connectors designed for strict environmental requirements and high durability.",
-        img: "/images/prod_mc4_connector.png",
+        img: "/images/electrical-items/Solar MC4 Connector (LQ-1).jpg",
         details: [
           {
             type: "parameters",
@@ -473,7 +473,7 @@ export const catalog: ProductCategory[] = [
         name: "Branch Connector",
         spec: "50A, 1500V DC (IEC) / 1000V DC (UL)",
         desc: "Durable branch connectors designed for robust parallel wiring in solar layouts.",
-        img: "/images/solar_connectors.png",
+        img: "/images/electrical-items/Branch Connector.jpg",
         details: [
           {
             type: "parameters",
@@ -503,7 +503,7 @@ export const catalog: ProductCategory[] = [
         name: "Y Connector",
         spec: "30A, 1500V DC (IEC) / 1000V DC (UL)",
         desc: "Reliable Y connectors for dividing DC outputs efficiently.",
-        img: "/images/solar_connectors.png",
+        img: "/images/electrical-items/Y Connector.jpg",
         details: [
           {
             type: "parameters",
@@ -533,7 +533,7 @@ export const catalog: ProductCategory[] = [
         name: "TC Connector (LQ-1)",
         spec: "30A, 1500V DC (IEC) / 800V DC (UL)",
         desc: "Heavy-duty TC connectors engineered for rigorous solar applications.",
-        img: "/images/prod_mc4_connector.png",
+        img: "/images/electrical-items/TC Connector (LQ-1).png",
         details: [
           {
             type: "parameters",
@@ -563,7 +563,10 @@ export const catalog: ProductCategory[] = [
         name: "ACDB / DCDB Panels",
         spec: "Comprehensive range of distribution panels",
         desc: "Essential AC and DC distribution boxes equipped with high-quality MCB, SPD, and fuses for solar circuit protection.",
-        img: "/images/prod_acdb_panel.png",
+        img: [
+          "/images/electrical-items/ACDB  DCDB Panels-1.jpeg",
+          "/images/electrical-items/ACDB  DCDB Panels-2.jpg"
+        ],
         details: [
           {
             type: "table",
@@ -602,7 +605,7 @@ export const catalog: ProductCategory[] = [
         name: "Solar Earthing Kit",
         spec: "Complete Lightning and Earthing Solution",
         desc: "A comprehensive turnkey grounding kit ensuring system and personnel safety.",
-        img: "/images/prod_earthing_kit.png",
+        img: "/images/electrical-items/Solar Earthing Kit.jpg",
         details: [
           {
             type: "list",
@@ -622,7 +625,7 @@ export const catalog: ProductCategory[] = [
         name: "Isolation Switch",
         spec: "600V to 1200V / 16A to 63A",
         desc: "High-quality isolation protection from direct currents up to 1200V. Rated for IP65/IP66 outdoor use.",
-        img: "/images/prod_isolation_switch.png",
+        img: "/images/electrical-items/Isolation Switch.jpg",
         details: [
           {
             type: "parameters",
@@ -639,7 +642,10 @@ export const catalog: ProductCategory[] = [
         name: "Solar Cable Types",
         spec: "DC, AC, LA, and Earthing Variants",
         desc: "High quality UV-resistant solar cables customized for different segments like DC, AC, LA, and Earthing.",
-        img: "/images/products_hero.png",
+        img: [
+          "/images/electrical-items/Solar Cable Types-1.jpg",
+          "/images/electrical-items/Solar Cable Types-2.jpg"
+        ],
         details: [
           {
             type: "list",
@@ -665,7 +671,7 @@ export const catalog: ProductCategory[] = [
         name: "J. Bolt — SS304",
         spec: "SS304 for varying pipe sizes",
         desc: "Premium quality stainless steel 304 J Bolts.",
-        img: "/images/products_hero.png",
+        img: "/images/structure-items/J. Bolt - SS304.jpg",
         details: [
           {
             type: "list",
@@ -679,7 +685,7 @@ export const catalog: ProductCategory[] = [
         name: "U. Bolt — SS304",
         spec: "SS304 for varying pipe sizes",
         desc: "Premium quality stainless steel 304 U Bolts.",
-        img: "/images/products_hero.png",
+        img: "/images/structure-items/U. Bolt - SS304.webp",
         details: [
           {
             type: "list",
@@ -693,7 +699,7 @@ export const catalog: ProductCategory[] = [
         name: "G.I & M.S. Base Plate",
         spec: "Sizes ranging from 125x50x3mm to 150x150x5mm",
         desc: "Durable Galvanized Iron and Mild Steel ground plating.",
-        img: "/images/products_hero.png",
+        img: "/images/structure-items/G.I & M.S. Base Plate.jpg",
         details: [
           {
             type: "list",
@@ -714,7 +720,7 @@ export const catalog: ProductCategory[] = [
         name: "Wadge Anchor Fastener",
         spec: "Available heavily tested wedge anchors",
         desc: "Wedge anchor fastener suitable for heavy load applications on un-cracked concrete.",
-        img: "/images/products_hero.png",
+        img: "/images/structure-items/Wadge Anchor Fastener.png",
         details: [
           {
             type: "list",
@@ -734,7 +740,7 @@ export const catalog: ProductCategory[] = [
         name: "PIN Type Anchor Fastener",
         spec: "Available heavily tested pin anchors",
         desc: "Pin type expansion anchor assuring strong grips across concrete substrates.",
-        img: "/images/products_hero.png",
+        img: "/images/structure-items/PIN Type Anchor Fastener.webp",
         details: [
           {
             type: "list",
@@ -754,7 +760,10 @@ export const catalog: ProductCategory[] = [
         name: "Aluminium Mono Base Rail & Profiles",
         spec: "Extruded Aluminium Structurals",
         desc: "Precision extruded structural aluminium rails and star/straight/slant rails.",
-        img: "/images/solar_mounts.png",
+        img: [
+          "/images/structure-items/Aluminium Mono Base Rail & Profiles-1.png",
+          "/images/structure-items/Aluminium Mono Base Rail & Profiles-2.jpg"
+        ],
         details: [
           {
             type: "table",
@@ -779,7 +788,7 @@ export const catalog: ProductCategory[] = [
         name: "Mid & End Clamp — SS304",
         spec: "SS304 for varying profile thickness",
         desc: "High-grade SS304 End clamps and Mid clamps.",
-        img: "/images/solar_mounts.png",
+        img: "/images/structure-items/Mid & End Clamp - SS304.jpg",
         details: [
           {
             type: "list",
@@ -793,7 +802,7 @@ export const catalog: ProductCategory[] = [
         name: "Cable Tie",
         spec: "Multiple tie specifications available",
         desc: "Rugged cable ties for routing high-tension cables.",
-        img: "/images/products_hero.png",
+        img: "/images/structure-items/Cable Tie.webp",
         details: [
           {
             type: "list",
@@ -812,7 +821,7 @@ export const catalog: ProductCategory[] = [
         name: "SS Allen Bolt (Single & Double Hole)",
         spec: "M8 Socket Bolts",
         desc: "Durable Stainless Steel Allen Bolts available in single and double hole configurations.",
-        img: "/images/products_hero.png",
+        img: "/images/structure-items/SS Allen Bolt (Single & Double Hole).jpg",
         details: [
           {
             type: "list",
@@ -826,7 +835,7 @@ export const catalog: ProductCategory[] = [
         name: "Spring Nut — Aluminium",
         spec: "Various sizing available",
         desc: "Aluminium spring nuts to assist in rail and truss configurations.",
-        img: "/images/solar_mounts.png",
+        img: "/images/structure-items/Spring Nut — Aluminium.jpg",
         details: [
           {
             type: "list",
@@ -840,7 +849,7 @@ export const catalog: ProductCategory[] = [
         name: "Rail Nut — Aluminium",
         spec: "T-Slot rail inserts",
         desc: "Pre-threaded aluminium rail nuts designed for quick placement and secure holds.",
-        img: "/images/solar_mounts.png",
+        img: "/images/structure-items/Rail Nut — Aluminium.jpg",
         details: [
           {
             type: "list",
@@ -854,7 +863,7 @@ export const catalog: ProductCategory[] = [
         name: "Pop Rivet — Aluminium",
         spec: "Wide range of rivet diameters",
         desc: "Blind aluminium pop rivets forming seamless, strong mechanical bonds at structural sheet joints.",
-        img: "/images/products_hero.png",
+        img: "/images/structure-items/Pop Rivet — Aluminium.png",
         details: [
           {
             type: "list",
@@ -871,7 +880,7 @@ export const catalog: ProductCategory[] = [
         name: "EPDM Roll",
         spec: "Thick weatherproof sealing",
         desc: "High density EPDM utility rolling tapes for waterproofing.",
-        img: "/images/products_hero.png",
+        img: "/images/structure-items/EPDM Roll.jpg",
         details: [
           {
             type: "parameters",
@@ -888,7 +897,7 @@ export const catalog: ProductCategory[] = [
         name: "Zinc Spray",
         spec: "Anti-corrosion aerosol spray",
         desc: "Fast-drying high-quality zinc coating for instant protection of fresh cuts or welded joints.",
-        img: "/images/products_hero.png",
+        img: "/images/structure-items/Zinc Spray.webp",
         details: [
           {
             type: "parameters",
@@ -912,7 +921,7 @@ export const catalog: ProductCategory[] = [
         name: "Naylon & SS Sprinkler",
         spec: "Automated panel watering units",
         desc: "Mounted sprinklers specifically designed to cool down and wash solar cell surfaces seamlessly.",
-        img: "/images/products_hero.png",
+        img: "/images/cleaning-items/Naylon & SS Sprinkler.jpg",
         details: [
           {
             type: "list",
@@ -926,7 +935,7 @@ export const catalog: ProductCategory[] = [
         name: "Cleaning Brush & MOP (Naylon)",
         spec: "Telescopic handling, up to 6m",
         desc: "Long-reach soft cleaning brush/mop engineered to scrub surfaces effectively without micro-scratching glass.",
-        img: "/images/products_hero.png",
+        img: "/images/cleaning-items/Cleaning Brush & MOP.jpg",
         details: [
           {
             type: "list",
@@ -940,7 +949,7 @@ export const catalog: ProductCategory[] = [
         name: "Water Drain Clip",
         spec: "30mm to 40mm",
         desc: "Edge-mounted clips that drastically accelerate panel water drainage preventing mud accumulation on bottom rails.",
-        img: "/images/products_hero.png",
+        img: "/images/cleaning-items/Water Drain Clip.jpg",
         details: [
           {
             type: "list",
@@ -954,7 +963,7 @@ export const catalog: ProductCategory[] = [
         name: "Pressure Gun — Power Jet Pro 7X",
         spec: "60-80 Bar, Multi-nozzle",
         desc: "High-pressure washer gun designed to cut through hardened bird droppings and extreme grime.",
-        img: "/images/products_hero.png",
+        img: "/images/cleaning-items/Pressure Gun — Power Jet Pro 7X.webp",
         details: [
           {
             type: "parameters",
@@ -971,7 +980,7 @@ export const catalog: ProductCategory[] = [
         name: "Pressure Pump",
         spec: "High Power 8 HP Engine",
         desc: "Industrial-grade high-volume washing pump intended for cleaning massive mega-watt scale solar farms.",
-        img: "/images/products_hero.png",
+        img: "/images/cleaning-items/Pressure Pump.webp",
         details: [
           {
             type: "parameters",

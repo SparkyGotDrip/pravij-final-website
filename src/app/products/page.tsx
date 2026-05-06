@@ -210,7 +210,7 @@ export default function ProductsPage() {
                       >
                         <div className="w-full aspect-square rounded-3xl bg-zinc-100 mb-4 overflow-hidden shadow-[inset_0_0_0_1px_rgba(0,0,0,0.04)] relative">
                           <img
-                            src={item.img}
+                            src={Array.isArray(item.img) ? item.img[0] : item.img}
                             alt={item.name}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                           />

@@ -29,11 +29,24 @@ export default async function ProductDetailsPage({
         
         <div className="bg-white rounded-3xl shadow-sm border border-zinc-100 overflow-hidden mb-12">
           <div className="aspect-video relative bg-zinc-100">
-            <img
-              src={product.img}
-              alt={product.name}
-              className="w-full h-full object-cover"
-            />
+            {Array.isArray(product.img) ? (
+              <div className="flex overflow-x-auto snap-x snap-mandatory h-full scrollbar-hide">
+                {product.img.map((image, idx) => (
+                  <img
+                    key={idx}
+                    src={image}
+                    alt={`${product.name} - ${idx + 1}`}
+                    className="w-full h-full object-cover shrink-0 snap-center"
+                  />
+                ))}
+              </div>
+            ) : (
+              <img
+                src={product.img}
+                alt={product.name}
+                className="w-full h-full object-cover"
+              />
+            )}
           </div>
           
           <div className="p-8 md:p-12">
